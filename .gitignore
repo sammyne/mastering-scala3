@@ -6,3 +6,9 @@ hs_err_pid*
 
 # sbt
 **/target/
+
+# Metals
+.metals/
+.bloop/
+.ammonite/
+metals.sbt
