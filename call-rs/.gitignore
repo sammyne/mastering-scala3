@@ -1,0 +1,8 @@
+.metals/
+.bloop/
+.ammonite/
+metals.sbt
+
+**/build/
+
+_*
