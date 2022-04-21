@@ -34,3 +34,6 @@ rm -rf $pkg
 ```
 
 The output header file is `_helloworld_HelloWorld.h`.
+
+## References
+- [crate jni](https://docs.rs/jni/0.19.0/jni/)
