@@ -89,9 +89,9 @@ lazy val native = project
   .in(file("native"))
   .settings(
     name := "hello-world-native",
-    nativeCompile / sourceDirectory := baseDirectory.value
+    nativeCompile / sourceDirectory := sourceDirectory.value
   )
-  .enablePlugins(JniNative)
+  .enablePlugins(JniNative, JniPackage)
 
 lazy val core = project
   .in(file("core"))
@@ -100,6 +100,7 @@ lazy val core = project
     Compile / mainClass := Some(
       "com.github.sammyne.helloworld.Main"
     ),
+    javah / target := (native / nativeCompile / sourceDirectory).value / "include",
     // libraryDependencies ++= List(
     //  Dependencies.zio,
     //  // Test

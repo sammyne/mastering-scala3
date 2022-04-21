@@ -6,9 +6,16 @@ hs_err_pid*
 
 # sbt
 **/target/
+.bsp
 
 # Metals
 .metals/
 .bloop/
 .ammonite/
 metals.sbt
+
+# VSCode
+.vscode
+.history
+
+
