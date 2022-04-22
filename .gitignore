@@ -12,3 +12,9 @@ hs_err_pid*
 .bloop/
 .ammonite/
 metals.sbt
+
+# VSCode
+**/.vscode
+
+# more
+_*

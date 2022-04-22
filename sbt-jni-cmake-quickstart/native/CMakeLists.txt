@@ -10,3 +10,4 @@ aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/src srcs)
 add_library(helloworld SHARED ${srcs})
 target_include_directories(helloworld
   PUBLIC ${JNI_INCLUDE_DIRS})
+install(TARGETS helloworld LIBRARY DESTINATION .)
